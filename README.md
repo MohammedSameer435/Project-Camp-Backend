@@ -58,7 +58,7 @@ basecamp-backend
 Installation and Setup
 
 Clone the repository
-git clone https://github.com/yourusername/basecamp-backend.git
+git clone https://github.com/MohammedSameer435/Project-Camp-Backend.git
 
 cd basecamp-backend
 
@@ -90,8 +90,8 @@ The server will start on http://localhost:5000
 Make sure MongoDB is running locally or connected via MongoDB Atlas.
 
 API Overview
-Auth Routes
 
+Auth Routes
 Base URL: /api/v1/auth
 
 /register - POST - Register a new user
@@ -104,7 +104,6 @@ Base URL: /api/v1/auth
 /change-password - POST - Change password
 
 Project Routes
-
 Base URL: /api/v1/projects
 
 / - GET - Get all projects
@@ -118,7 +117,6 @@ Base URL: /api/v1/projects
 /:projectId/members/:userId - DELETE - Remove member
 
 Task Routes
-
 Base URL: /api/v1/tasks
 
 /:projectId - GET - Get tasks for a project
@@ -131,7 +129,6 @@ Base URL: /api/v1/tasks
 /:projectId/st/:subTaskId - DELETE - Delete subtask
 
 Note Routes
-
 Base URL: /api/v1/notes
 
 /:projectId - GET - Get notes for a project
@@ -141,11 +138,9 @@ Base URL: /api/v1/notes
 /:projectId/n/:noteId - DELETE - Delete note
 
 Healthcheck
-
 Base URL: /api/v1/healthcheck
 
 GET /api/v1/healthcheck
-
 Response:
 {
 "success": true,
@@ -153,23 +148,17 @@ Response:
 }
 
 Role-Based Access
-
 Admin: Full access to all project actions
 Project Admin: Manage tasks, notes, and members
 Member: View and update assigned tasks and notes
 
 Email System
-
 The email service uses Mailgen and Nodemailer for:
-
 Sending verification emails
-
 Sending password reset emails
-
 Each email includes a clean HTML template.
 
 API Response Format
-
 Successful response:
 {
 "success": true,
@@ -186,12 +175,9 @@ Error response:
 "errors": []
 }
 
+
 Future Enhancements
-
 File uploads for project assets
-
 Real-time updates with Socket.IO
-
 Dashboard analytics
-
 Calendar integration
